@@ -79,7 +79,7 @@ html,body{
     border:none;
     border-radius:20px;
     background-color: #04AA6D;
-    padding:10px;
+    padding:1.1vw;
     font-size: 1.3vw;
     font-weight: 200;
 }
@@ -98,14 +98,15 @@ html,body{
 }
 .navpart2-left{
     display:flex;
-    font-size: 1.6vw;
+    font-size: 1.4vw;
     /* width:80%; */
     font-weight: 100;
+    align-items: center;
 }
 
 .navpart2-left h6{
-padding:10px 15px;
-font-weight: 100;
+padding:1vw 1.2vw;
+ font-weight: 100;
 }
 .navpart2-left h6:hover{
 background-color: #000000;
@@ -115,12 +116,13 @@ cursor: pointer;
     /* width:20%; */
     display:flex;
     align-items: center;
-    font-size: 1.5vw;
+    font-size: 1.4vw;
     
 }
 .navpart2-right i{
-    padding:10px 15px;
-font-weight: 100;
+    padding:0.8vw 1.2vw;
+    font-weight: 100;
+ 
 }
 .navpart2-right i:hover{
     background-color: #000000;
@@ -302,4 +304,127 @@ button:hover{
     /* padding:3vw; */
 }
 @media(max-width:600px){
+    .main{
+        width:100%;
+        height:100%;
+    }
+    .nav{
+        width:100%;
+        height:20vh;
+        
+    }
+    .nav1 img{
+        width:10vw;
+        height:14vw;
+    }
+    .nav2 h6:nth-child(-n+2){
+        display:none;
+    }
+    .nav2 .signup{
+        font-size: 2.5vh;
+        padding:3vh 2vh;
+    }
+    
+    .nav2 h6{
+        font-size: 3.5vh;
+        
+        /* padding:2vh; */
+        /* width:20vw; */
+
+
+    }
+
+    .nav1 h3{
+        display:none;
+    }
+    
+    .navpart2-left h6:nth-last-child(-n+9){
+        display:none;
+
+    }
+    .navpart2-left{
+        display:flex;
+       /* flex-direction: column; */
+        
+    }
+    .navpart2-left h6{
+        font-size:3.6vw;
+        padding:1.5vh 3vw;
+    }
+    .navpart2-right{
+        display:none;
+    }
+    .content{
+        height:calc(100% - 20vh - 40px);
+        width:100%;
+        /* border:solid red 2px; */
+
+    }
+    .home{
+        height:50%;
+        /* border:solid red 2px; */
+        margin-top:15vh;
+    }
+    .home h1{
+        font-size:5vh;
+        margin-bottom:5vh;
+    }
+    .home h3{
+        font-size:2vh;
+        margin-bottom:5vh;
+    }
+    .search{
+        width:100%;
+
+    }
+    .search input{
+        width:60%;
+    }
+    ::placeholder{
+        padding:1vh;
+        font-size: 1.5vh;
+    }
+    .anchor{
+        font-size: 2vh;
+        margin-top: 5vh;
+    }
+    .sec-main{
+        height: 100%;
+        width:100%;
+        flex-direction: column;
+    }
+    .sec-main .left{
+        /* border: solid black 2px;; */
+        width:100%;
+        height:50%;
+    } 
+    
+    .container h1{
+        font-size: 6vh;
+    }
+    .container h3{
+        font-size: 2.8vh;
+    }
+    button{
+        
+        font-size: 2.5vh;
+        /* padding:2vh 0vw; */
+       
+    }
+    .video{
+       margin:1.5vh; 
+    }
+    .ref{
+        margin-bottom:1.5vh; 
+    }
+    .sec-main .right{
+        width:100%;
+        height:50%;
+    }
+    .right .box{
+        margin-left:14vw;
+    }
+    .box h3{
+        font-size: 2.5vh;
+    }
 }
